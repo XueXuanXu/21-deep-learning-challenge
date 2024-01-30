@@ -12,7 +12,7 @@ In the data preprocessing section:
 ### Compiling, Training, and Evaluating the Model
 In the compiling, training, and evaluating the model section:
 1. create a neural network model with three layers
-2. complie the model
+2. compile the model
 3. train the model
 4. evaluate the model with the data
 
@@ -20,35 +20,35 @@ In the compiling, training, and evaluating the model section:
 
 ### Data Preprocessing
 
-What variable(s) are the target(s) for your model?
--The column *IS_SUCCESSFUL* is the target for the model.
+What variable(s) are the target(s) for your model?   
+- The column *IS_SUCCESSFUL* is the target for the model.
 
 What variable(s) are the features for your model?    
--The columns: *APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT* are the features for the model.
+- The columns: *APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT* are the features for the model.
 
 What variable(s) should be removed from the input data because they are neither targets nor features?
--The columns: *EIN and NAME* are the identification columns, so they should be removed from the input data.
+- The columns: *EIN and NAME* are the identification columns, so they should be removed from the input data.
 
 ### Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- I used three layers. The first layer use 80 units and 43 input dimensions, and relu as the activation function. The second layer I use 30 units and relu as the activation function. The last layer I use 1 unit and sigmoid to get the output. 
-- The reasons I choose those functions are that I don't see that the data has a negative part, the output only need to be 0 or 1, and I had tried different functions and neurons amount but got the similar result, therefore, I keep the one that use the less time to run.
-![nn_model_summary1](image.jpg)
-![nn_model_summary1_1](image.jpg)
-![nn_model_summary2](image.jpg)
-![nn_model_summary2_1](image.jpg)
-![nn_model_summary3](image.jpg)
-![nn_model_summary3_1](image.jpg)
+- I used three layers. The first layer uses 80 units and 43 input dimensions, and relu as the activation function. In the second layer I use 30 units and relu as the activation function. In the last layer I use 1 unit and sigmoid to get the output. 
+- The reasons I chose those functions are that I don't see that the data has a negative part, the output only needs to be 0 or 1, and I had tried different functions and neurons amount but got similar results, therefore, I keep the one that use the less time to run.
+![nn_model_summary1](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary1.PNG)
+![nn_model_summary1_1](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary1_1.PNG)
+![nn_model_summary2](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary2.PNG)
+![nn_model_summary2_1](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary2_1.PNG)
+![nn_model_summary3](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary3.PNG)
+![nn_model_summary3_1](https://github.com/XueXuanXu/21-deep-learning-challenge/blob/main/image/nn_model_summary3_1.PNG)
 
 
-Were you able to achieve the target model performance?
--The model performance was lower than I expert since it only has 0.56 as the loss and 0.73 as the accuracy.
+Were you able to achieve the target model performance?    
+- The model performance was lower than I expected since it only has 0.56 as the loss and 0.73 as the accuracy.
 
-What steps did you take in your attempts to increase model performance?
-- I tried increase the neurons amount, increase the layers amount, and change the activation function as the pictures above.
+What steps did you take in your attempts to increase model performance?   
+- I tried to increase the neurons amount, increase the layers amount, and change the activation function as the pictures above.
 
 
-## Summary: 
--After prepocessing the data and build the neural network model, I got the model loss 0.56and accuracy 0.73, which is not a very good model. 
--For the models I have learned, I may recommand using the K-Nearest Neighbors model, since it is a good model for predict classification result and it is easy to use. 
+## Summary:     
+- After preprocessing the data and building the neural network model, I got a model loss of 0.56 and an accuracy of 0.73, which is not a very good model. 
+- For the models I have learned, I may recommend using the K-Nearest Neighbors model, since it is a good model for predicting classification results and it is easy to use. 
